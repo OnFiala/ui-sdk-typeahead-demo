@@ -98,7 +98,7 @@ The first browser screenshot showed the open list covering the footer, with "Bui
 
 - Home and End do not move the highlight to the first or last option. The installed combobox docs, `createListbox`'s virtual-focus rule, and the APG editable combobox example all leave those keys to the text field. No public controller method was found that moves only the highlight. Overriding it in an `onKeyDown` would fight the component.
 - Vitest 4 and a clean `npm audit` of the test toolchain. The published site does not ship Vitest.
-- Whether GitHub Actions actually updated `gh-pages` is recorded in the PR notes after the push, not in this file's first draft. The workflow file is in the repo either way.
+- The Pages *site* is not enabled on the repository. After the first push, Actions run [43393103811](https://github.com/OnFiala/ui-sdk-typeahead-demo/actions/runs/43393103811) completed with success: Install, Test, Build, and "Publish dist to gh-pages" all passed, and `refs/heads/gh-pages` exists. `GET /repos/OnFiala/ui-sdk-typeahead-demo/pages` returned 404, and https://onfiala.github.io/ui-sdk-typeahead-demo/ returned 404. Publishing the branch does not turn the GitHub Pages feature on. That setting was not changed from here.
 
 ## Commands
 
